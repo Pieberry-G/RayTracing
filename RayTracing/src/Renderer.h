@@ -24,6 +24,7 @@ private:
 		float HitDistance;
 		glm::vec3 WorldPosition;
 		glm::vec3 WorldNormal;
+
 		uint32_t ObjectIndex;
 	};
 
