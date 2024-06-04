@@ -120,10 +120,10 @@ Renderer::HitPayload Renderer::TraceRay(const Ray& ray)
 		// (-b +- sqrt(discriminant)) / (2.0f * a)
 		float closetT = (-b - glm::sqrt(discriminant)) / (2.0f * a);
 		//float t0 = (-b + glm::sqrt(discriminant)) / (2.0f * a);
-		if (closetT > 0 && closetT < hitDistance)
+		if (closetT < hitDistance)
 		{
 			hitDistance = closetT;
-			closestSphere = (int)i;
+			closestSphere = i;
 		}
 	}
 
